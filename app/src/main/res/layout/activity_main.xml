@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    android:background="@color/background"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgIcon"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDate"
+                android:textColor="@color/date"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/txtCityTempreture"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:background="@drawable/text_view" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textSize="30sp"
+            android:text="°C"
+            android:background="@drawable/text_view" />
+
+
+
+    </LinearLayout>
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+         android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_view"
+            android:textSize="20sp"
+            android:textColor="@color/date"/>
+         <ImageView
+             android:id="@+id/imgEdit"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/edit"
+             android:background="@drawable/image_view"
+             android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/layout"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            style="@style/text_color"
+            android:padding="20dp"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:text="Humidity"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtHumidity"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:text="--"
+                        android:textSize="25sp"
+                        android:gravity="left"
+                        android:background="@drawable/text_view"
+
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:text="Wind"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtWind"
+                        android:text="--"
+                        android:textSize="25sp"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10px">
+
+                    <TextView
+                        android:text="Min Temp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtTempMin"
+                        android:text="--"
+                        android:textSize="25sp"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:text="Max Temp"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtTempMax"
+                        android:text="--"
+                        android:textSize="25sp"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="88dp"
+                        android:background="@drawable/text_view"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nextDaysRecycler"
+        android:padding="20dp"
+        />
+</LinearLayout>
